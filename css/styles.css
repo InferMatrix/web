@@ -1,0 +1,162 @@
+/* Global Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9fb;
+  scroll-behavior: smooth;
+}
+
+/* Header Styling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex; /* Flexbox for aligning logo and menu in one row */
+  justify-content: space-between; /* Space between logo and menu */
+  align-items: center; /* Aligns items vertically */
+  padding: 1rem 2rem; /* Adds padding around header */
+  background: linear-gradient(90deg, #4A90E2, #6A67CE); /* Vibrant gradient */
+  color: #fff; /* White text color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+header .logo {
+  font-size: 1.8rem; /* Size of the logo text */
+  font-weight: bold; /* Bold logo text */
+  color: #fff; /* White logo color */
+}
+
+header nav ul {
+  list-style: none; /* Removes default bullet points */
+  display: flex; /* Aligns menu items horizontally */
+  justify-content: flex-end; /* Align menu items to the right */
+  gap: 1.5rem; /* Adds spacing between menu items */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+}
+
+header nav ul li {
+  display: inline; /* Ensures list items are inline-block */
+}
+
+header nav ul li a {
+  color: #fff; /* Text color for menu links */
+  text-decoration: none; /* Removes underline from links */
+  font-weight: 500; /* Slightly bold text for better visibility */
+  padding: 0.5rem 1rem; /* Adds padding for clickable area */
+  border-radius: 5px; /* Rounds the edges for a modern look */
+  transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background: #ffd700; /* Golden background on hover or active state */
+  color: #333; /* Darker text for contrast */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #6A67CE, #4A90E2);
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero .cta-button {
+  padding: 0.75rem 1.5rem;
+  background: #ffd700;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero .cta-button:hover {
+  background: #e5c100;
+}
+
+/* Footer */
+footer {
+  background: #4A90E2;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+footer .socials a {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+footer .socials a:hover {
+  color: #ffd700;
+}
+
+footer form {
+  margin-top: 2rem;
+}
+
+footer input[type="email"] {
+  padding: 0.75rem;
+  width: 300px;
+  max-width: 80%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+footer button {
+  padding: 0.75rem 1.5rem;
+  background: #ffd700;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+footer button:hover {
+  background: #e5c100;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #4A90E2;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: #6A67CE;
+}
